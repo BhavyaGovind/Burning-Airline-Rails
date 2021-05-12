@@ -15890,3 +15890,246 @@ Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
   [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
   [1m[36mReservation Load (3.2ms)[0m  [1m[34mSELECT  "reservations".* FROM "reservations" WHERE "reservations"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+Started GET "/airplanes" for ::1 at 2021-05-12 14:21:52 +1000
+  [1m[35m (58.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bhavyasanthu/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (159.0ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:16
+  Rendered airplanes/index.html.erb within layouts/application (296.0ms)
+Completed 200 OK in 510ms (Views: 208.1ms | ActiveRecord: 256.6ms)
+
+
+Started GET "/airplanes" for ::1 at 2021-05-12 14:21:58 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  [1m[36mAirplane Load (267.1ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:16
+  Rendered airplanes/index.html.erb within layouts/application (423.2ms)
+Completed 200 OK in 431ms (Views: 161.4ms | ActiveRecord: 267.1ms)
+
+
+Started GET "/airplanes" for ::1 at 2021-05-12 14:21:59 +1000
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+Started GET "/" for ::1 at 2021-05-12 14:21:59 +1000
+  [1m[36mAirplane Load (25.9ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ app/views/airplanes/index.html.erb:16
+  Rendered airplanes/index.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 36ms (Views: 8.2ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/users/new" for ::1 at 2021-05-12 14:22:00 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (17.4ms)
+  Rendered users/new.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 327ms (Views: 33.2ms | ActiveRecord: 229.0ms)
+
+
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/bhavyasanthu/.rvm/gems/ruby-2.7.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bhavyasanthu/.rvm/gems/ruby-2.7.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 55ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2021-05-12 14:22:02 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (11.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (56.7ms)
+Completed 200 OK in 67ms (Views: 51.7ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/users/new" for ::1 at 2021-05-12 14:22:17 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (11.1ms)
+  Rendered users/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 33ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2021-05-12 14:22:24 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZoQWFZ1/h8OX0x5woYLF04RECvP/ZcpI5NU0knK9Wdxw1AfiS6qrCIrzr38y9cV5sgvhPkUBZZeXOYPvuCfXrw==", "commit"=>"Create User"}
+  [1m[35m (3.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27
+  [1m[35m (2.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:27
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.8ms)
+  Rendered users/new.html.erb within layouts/application (100.5ms)
+Completed 422 Unprocessable Entity in 127ms (Views: 109.1ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/users" for ::1 at 2021-05-12 14:22:26 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/new" for ::1 at 2021-05-12 14:22:35 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 16ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2021-05-12 14:22:58 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Qda0AJRfOO4VJpxToi4hDoB8zoJzDSqs60KLVuhT8D3V0sn1IRQKKV0K37d/7guDE4Y97Oom3XAQb1QkTvBsw==", "commit"=>"Create User"}
+  [1m[35m (148.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27
+  [1m[35m (57.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:27
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.8ms)
+  Rendered users/new.html.erb within layouts/application (11.0ms)
+Completed 422 Unprocessable Entity in 233ms (Views: 22.5ms | ActiveRecord: 205.4ms)
+
+
+Started GET "/users" for ::1 at 2021-05-12 14:23:07 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 22ms (Views: 14.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/new" for ::1 at 2021-05-12 14:23:14 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 14ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-05-12 14:23:15 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/bhavyasanthu/.rvm/gems/ruby-2.7.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bhavyasanthu/.rvm/gems/ruby-2.7.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (4.7ms)
+Completed 200 OK in 18ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights.json" for ::1 at 2021-05-12 14:23:16 +1000
+Processing by FlightsController#index as JSON
+  Rendering flights/index.json.jbuilder
+  [1m[36mFlight Load (63.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.json.jbuilder:1
+  Rendered flights/_flight.json.jbuilder (5.0ms)
+  Rendered flights/_flight.json.jbuilder (0.5ms)
+  Rendered flights/_flight.json.jbuilder (0.9ms)
+Started GET "/flights" for ::1 at 2021-05-12 14:23:17 +1000
+  Rendered flights/_flight.json.jbuilder (71.9ms)
+  Rendered flights/_flight.json.jbuilder (1.0ms)
+  Rendered flights/_flight.json.jbuilder (20.1ms)
+  Rendered flights/_flight.json.jbuilder (2.5ms)
+  Rendered flights/_flight.json.jbuilder (0.4ms)
+  Rendered flights/_flight.json.jbuilder (0.8ms)
+  Rendered flights/index.json.jbuilder (1000.6ms)
+Completed 200 OK in 1017ms (Views: 283.7ms | ActiveRecord: 720.6ms)
+
+
+Processing by FlightsController#index as HTML
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (195.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.html.erb:18
+  Rendered flights/index.html.erb within layouts/application (199.5ms)
+Completed 200 OK in 211ms (Views: 12.6ms | ActiveRecord: 195.0ms)
+
+
+Started GET "/flights/new" for ::1 at 2021-05-12 14:23:22 +1000
+Processing by FlightsController#new as HTML
+  Rendering flights/new.html.erb within layouts/application
+  Rendered flights/_form.html.erb (74.8ms)
+  Rendered flights/new.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 99ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights/new" for ::1 at 2021-05-12 14:24:07 +1000
+Processing by FlightsController#new as HTML
+  Rendering flights/new.html.erb within layouts/application
+  Rendered flights/_form.html.erb (23.4ms)
+  Rendered flights/new.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 59ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights.json" for ::1 at 2021-05-12 14:24:08 +1000
+Processing by FlightsController#index as JSON
+  Rendering flights/index.json.jbuilder
+  [1m[36mFlight Load (169.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/views/flights/index.json.jbuilder:1
+  Rendered flights/_flight.json.jbuilder (1.5ms)
+  Rendered flights/_flight.json.jbuilder (0.5ms)
+  Rendered flights/_flight.json.jbuilder (0.8ms)
+  Rendered flights/_flight.json.jbuilder (0.5ms)
+  Rendered flights/_flight.json.jbuilder (0.6ms)
+  Rendered flights/_flight.json.jbuilder (0.5ms)
+  Rendered flights/_flight.json.jbuilder (0.4ms)
+  Rendered flights/_flight.json.jbuilder (1.8ms)
+  Rendered flights/_flight.json.jbuilder (0.5ms)
+  Rendered flights/index.json.jbuilder (209.7ms)
+Completed 200 OK in 220ms (Views: 45.2ms | ActiveRecord: 169.5ms)
+
+
+Started GET "/" for ::1 at 2021-05-12 14:24:10 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/bhavyasanthu/.rvm/gems/ruby-2.7.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bhavyasanthu/.rvm/gems/ruby-2.7.3/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2021-05-12 14:24:23 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.7ms)
+  Rendered users/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2021-05-12 14:24:24 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/new" for ::1 at 2021-05-12 14:24:27 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2021-05-12 14:24:32 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7eg5MhJp/yx/ic6uLVPRdqGRyddUFy3nDTVF7EEJ1I37uCjFxLzT52Kpf6G+JNHcl94iGu5zgjh+2fKRi5Na/g==", "commit"=>"Create User"}
+  [1m[35m (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:27
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (11.6ms)
+  Rendered users/new.html.erb within layouts/application (55.8ms)
+Completed 422 Unprocessable Entity in 102ms (Views: 89.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users" for ::1 at 2021-05-12 14:29:17 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (26.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 45ms (Views: 13.9ms | ActiveRecord: 26.2ms)
+
+
